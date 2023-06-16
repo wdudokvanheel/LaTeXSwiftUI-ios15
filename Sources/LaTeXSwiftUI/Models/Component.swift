@@ -28,6 +28,7 @@ import MathJaxSwift
 import SwiftUI
 
 /// A block of components.
+@available(iOS 16.0, *)
 internal struct ComponentBlock: Hashable, Identifiable {
   
   /// The component's identifier.
@@ -66,6 +67,7 @@ internal struct ComponentBlock: Hashable, Identifiable {
   
 }
 
+@available(iOS 16.0, *)
 /// A LaTeX component.
 internal struct Component: CustomStringConvertible, Equatable, Hashable {
   
@@ -205,7 +207,7 @@ internal struct Component: CustomStringConvertible, Equatable, Hashable {
 }
 
 // MARK: Methods
-
+@available(iOS 16.0, *)
 extension Component {
   
   /// Converts the component to a `Text` view.

@@ -25,7 +25,7 @@
 
 import Foundation
 import MathJaxSwift
-
+@available(iOS 16.0, *)
 extension TeXInputProcessorOptions {
   
   /// Initializes a set of options with the correct properties set for rendering

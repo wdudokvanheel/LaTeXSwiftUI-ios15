@@ -63,6 +63,7 @@ extension Key {
 
 /// Renders equation components and updates their rendered image and offset
 /// values.
+@available(iOS 16.0, *)
 internal class Renderer {
   
   // MARK: Types
@@ -122,7 +123,7 @@ internal class Renderer {
 }
 
 // MARK: Public methods
-
+@available(iOS 16.0, *)
 extension Renderer {
   
   /// Renders the view's component blocks.
@@ -253,7 +254,7 @@ extension Renderer {
 }
 
 // MARK: Cache access methods
-
+@available(iOS 16.0, *)
 extension Renderer {
   
   /// Safely access the cache value for the given key.
@@ -301,7 +302,7 @@ extension Renderer {
 }
 
 // MARK: Private methods
-
+@available(iOS 16.0, *)
 extension Renderer {
   
   /// Gets the error text from a possibly non-nil error.

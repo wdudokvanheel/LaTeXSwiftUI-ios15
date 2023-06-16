@@ -26,6 +26,7 @@
 import Foundation
 
 /// Parses LaTeX equations.
+@available(iOS 16.0, *)
 internal struct Parser {
   
   // MARK: Types
@@ -81,7 +82,7 @@ internal struct Parser {
 }
 
 // MARK: Static methods
-
+@available(iOS 16.0, *)
 extension Parser {
   
   /// Parses the input text for component blocks.

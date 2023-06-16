@@ -27,6 +27,7 @@ import Foundation
 import SwiftUI
 
 /// The geometry of a SVG.
+@available(iOS 16.0, *)
 internal struct SVGGeometry: Codable, Hashable {
   
   // MARK: Types
@@ -114,7 +115,7 @@ internal struct SVGGeometry: Codable, Hashable {
 }
 
 // MARK: Static methods
-
+@available(iOS 16.0, *)
 extension SVGGeometry {
   
   /// Parses the alignment from the style attribute.
@@ -162,7 +163,7 @@ extension SVGGeometry {
   }
   
 }
-
+@available(iOS 16.0, *)
 extension SVGGeometry.XHeight {
   
   /// Initializes a x-height value.

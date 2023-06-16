@@ -29,7 +29,7 @@ import SwiftUI
 private struct ImageRenderingModeKey: EnvironmentKey {
   static let defaultValue: Image.TemplateRenderingMode = .template
 }
-
+@available(iOS 16.0, *)
 private struct ErrorModeKey: EnvironmentKey {
   static let defaultValue: LaTeX.ErrorMode = .original
 }
@@ -37,11 +37,11 @@ private struct ErrorModeKey: EnvironmentKey {
 private struct UnencodeHTMLKey: EnvironmentKey {
   static let defaultValue: Bool = false
 }
-
+@available(iOS 16.0, *)
 private struct ParsingModeKey: EnvironmentKey {
   static let defaultValue: LaTeX.ParsingMode = .onlyEquations
 }
-
+@available(iOS 16.0, *)
 private struct BlockModeKey: EnvironmentKey {
   static let defaultValue: LaTeX.BlockMode = .blockViews
 }
@@ -49,7 +49,7 @@ private struct BlockModeKey: EnvironmentKey {
 private struct ProcessEscapesKey: EnvironmentKey {
   static let defaultValue: Bool = false
 }
-
+@available(iOS 16.0, *)
 private struct EquationNumberModeKey: EnvironmentKey {
   static let defaultValue: LaTeX.EquationNumberMode = .none
 }
@@ -61,11 +61,11 @@ private struct EquationNumberStartKey: EnvironmentKey {
 private struct EquationNumberOffsetKey: EnvironmentKey {
   static let defaultValue: CGFloat = 0.0
 }
-
+@available(iOS 16.0, *)
 private struct FormatEquationNumberKey: EnvironmentKey {
   static let defaultValue: LaTeX.FormatEquationNumber = { "(\($0))" }
 }
-
+@available(iOS 16.0, *)
 private struct RenderingStyleKey: EnvironmentKey {
   static let defaultValue: LaTeX.RenderingStyle = .wait
 }
@@ -81,7 +81,7 @@ extension EnvironmentValues {
     get { self[ImageRenderingModeKey.self] }
     set { self[ImageRenderingModeKey.self] = newValue }
   }
-  
+    @available(iOS 16.0, *)
   /// The error mode of this environment.
   var errorMode: LaTeX.ErrorMode {
     get { self[ErrorModeKey.self] }
@@ -93,13 +93,13 @@ extension EnvironmentValues {
     get { self[UnencodeHTMLKey.self] }
     set { self[UnencodeHTMLKey.self] = newValue }
   }
-  
+    @available(iOS 16.0, *)
   /// The parsing mode of this environment.
   var parsingMode: LaTeX.ParsingMode {
     get { self[ParsingModeKey.self] }
     set { self[ParsingModeKey.self] = newValue }
   }
-  
+    @available(iOS 16.0, *)
   /// The block mode of this environment.
   var blockMode: LaTeX.BlockMode {
     get { self[BlockModeKey.self] }
@@ -111,7 +111,7 @@ extension EnvironmentValues {
     get { self[ProcessEscapesKey.self] }
     set { self[ProcessEscapesKey.self] = newValue }
   }
-  
+    @available(iOS 16.0, *)
   /// The equation number mode of this environment.
   var equationNumberMode: LaTeX.EquationNumberMode {
     get { self[EquationNumberModeKey.self] }
@@ -129,13 +129,13 @@ extension EnvironmentValues {
     get { self[EquationNumberOffsetKey.self] }
     set { self[EquationNumberOffsetKey.self] = newValue }
   }
-  
+    @available(iOS 16.0, *)
   /// The closure used to format equation number before displaying them.
   var formatEquationNumber: LaTeX.FormatEquationNumber {
     get { self[FormatEquationNumberKey.self] }
     set { self[FormatEquationNumberKey.self] = newValue }
   }
-  
+    @available(iOS 16.0, *)
   /// The rendering style of this environment.
   var renderingStyle: LaTeX.RenderingStyle {
     get { self[RenderingStyleKey.self] }

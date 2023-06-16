@@ -27,6 +27,7 @@ import MathJaxSwift
 import SwiftUI
 
 /// A `LaTeX` view's render state.
+@available(iOS 16.0, *)
 internal class LaTeXRenderState: ObservableObject {
   
   /// The view's input string.
@@ -53,7 +54,7 @@ internal class LaTeXRenderState: ObservableObject {
 }
 
 // MARK: Public methods
-
+@available(iOS 16.0, *)
 extension LaTeXRenderState {
   
   /// Renders the views components.
