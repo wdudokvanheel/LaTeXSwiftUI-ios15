@@ -1,3 +1,6 @@
+# Fork notes
+This fork allows the package to be used in apps targeting iOS15. Please note that none of the components are ported and still require iOS16 to be used.
+
 # LaTeXSwiftUI
 
 A SwiftUI view that renders LaTeX equations.
